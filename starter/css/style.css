@@ -1,3 +1,19 @@
+/*
+0 - 600px      Phone
+600 - 900px    Tablet portrait
+900 - 1200px   Tablet landscape
+[1200-1800px] is where our normal styles apply
+1800+          Big desktop
+*/
+/*
+$breakpoint argument choices
+- phone
+- tab-port
+- tab-land
+- big-desktop
+
+1em = 16px
+*/
 *,
 *::after,
 *::before {
@@ -8,6 +24,12 @@
 html {
   font-size: 62.5%;
   /* equal to 10px based on a 16px browser standard font-size */ }
+  @media (max-width: 75em) {
+    html {
+      font-size: 56.25%; } }
+  @media (max-width: 56.25em) {
+    html {
+      font-size: 50%; } }
 
 body {
   box-sizing: border-box; }
