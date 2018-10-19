@@ -14,6 +14,7 @@
         top: 0;
         left: 0;
         width: 100%;
+        -webkit-backface-visibility: hidden; // does not work in google chrome, only safari
         backface-visibility: hidden;
         border-radius: 3px;
         overflow: hidden;
